@@ -268,3 +268,69 @@ main:hover {
 .about-image img:hover {
     transform: scale(1.05);
 }
+/* ===== Skills Section ===== */
+
+.skills-section {
+    padding: 100px 20px;
+}
+
+.skills-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skills-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.skills-heading h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.skills-heading > p:last-child {
+    color: #94a3b8;
+    font-size: 1.05rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    background-color: #1e293b;
+    padding: 30px 25px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.skill-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.skill-card p {
+    color: #94a3b8;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+}
+/* ===== Mobile Skills ===== */
+
+@media (max-width: 768px) {
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-heading h2 {
+        font-size: 2.2rem;
+    }
+}
